@@ -4,12 +4,12 @@
 
 ## Установка 
 * **С помощью npm**
-  *npm install
-  *При необходимости изменить порт с 3000 на другой создайте .env файл по образцу .env.example.
-  *npm start
+ + npm install
+ + При необходимости изменить порт с 3000 на другой создайте .env файл по образцу .env.example.
+ + npm start
 * **С помощью Docker**
-  *docker build -t my-express-app .
-  *docker run -p 3000:3000 my-express-app
+ + docker build -t my-express-app .
+ + docker run -p 3000:3000 my-express-app
 
 Перейдите на http://localhost:{port}/. Где port по умолчанию 3000 или указанный вами. Сообщение с адресом появляется в консоли.
 
