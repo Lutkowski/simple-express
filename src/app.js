@@ -1,8 +1,12 @@
 import express from 'express'
 import router from "./routes.js";
+import dotenv from "dotenv"
+
+dotenv.config()
+
+const PORT = process.env.PORT | 3000
 
 const app = express()
-const PORT = 3000
 
 app.use('/static', express.static('public'))
 app.use('/', router)
